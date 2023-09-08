@@ -1,4 +1,4 @@
-import 'package:Final6411790/screen/homeScreen.dart';
+import 'package:Final6411790/screen/mainScreen.dart';
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatefulWidget {
@@ -47,7 +47,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 ),
               ),
               SizedBox(height: 28,),
-              ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage())), child: Text('Home Screen'))
+              ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Main())), child: Text('Home Screen'))
             ],
           ),
         ),

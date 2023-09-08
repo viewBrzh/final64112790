@@ -1,18 +1,18 @@
-import 'package:Final6411790/screen/Catalogs.dart';
+import 'package:Final6411790/screen/catalogsScreen.dart';
 import 'package:Final6411790/screen/aboutScreen.dart';
 import 'package:Final6411790/screen/bookingScreen.dart';
 import 'package:Final6411790/screen/editScreen.dart';
-import 'package:Final6411790/screen/login.dart';
+import 'package:Final6411790/screen/SignInScreen.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Main extends StatefulWidget {
+  const Main({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Main> createState() => _MainState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 46,),
           ElevatedButton.icon(
-            onPressed: () => Navigator.push(context , MaterialPageRoute(builder: (context) => LoginPage())), 
+            onPressed: () => Navigator.push(context , MaterialPageRoute(builder: (context) => SignIn())), 
             icon: Icon(Icons.login), 
             label: Text("Login"),
           ),

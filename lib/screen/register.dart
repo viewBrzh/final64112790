@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'login.dart';
+import 'SignInScreen.dart';
 import 'package:Final6411790/apiEndpoint/apiUrl.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -38,7 +38,7 @@ class _RegisterPageState extends State<RegisterPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => SignIn(),
         ),
       );
       } else {

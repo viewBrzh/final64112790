@@ -1,4 +1,4 @@
-import 'package:Final6411790/screen/Catalogs.dart';
+import 'package:Final6411790/screen/catalogsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:Final6411790/screen/register.dart';
 import 'package:http/http.dart' as http;
@@ -7,14 +7,14 @@ import 'package:Final6411790/apiEndpoint/apiUrl.dart';
 import 'package:Final6411790/assets/dataKeeper.dart';
 import 'package:Final6411790/assets/allClass.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class SignIn extends StatefulWidget {
+  const SignIn({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignInState extends State<SignIn> {
   TextEditingController telephoneController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   int counter = 0;
